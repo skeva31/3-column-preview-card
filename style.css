@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh ;
+font-size: 11px;
+background-color: hsl(0, 0%, 95%);
+font-family: sans-serif;
+
+}
+   
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px;
+    height: 60%;
+    width: 50%;
+
+    
+  
+}
+.first{
+    background-color: hsl(31, 77%, 52%);
+    padding: 25px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+.second{
+    background-color: hsl(184, 100%, 22%);
+    padding: 25px;
+}
+.third{
+    background-color:  hsl(179, 100%, 13%);
+    padding: 25px;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+
+    
+}
+h1{
+    color: hsl(0, 0%, 95%);
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    bottom: -80px;
+    left: 20px;
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.first button{
+    color: hsl(31, 77%, 52%);
+    
+}
+.second button{
+    color: hsl(184, 100%, 22%);
+}
+.third button{
+    color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        width: 80px;
+        height: 20px;
+        position: relative;
+        bottom: 0px;
+    }
+}
+
+
